@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOBA संवाद 2026 — Official Highlights &amp; Impact Preview | NOBA GSR</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 14mm 16mm;
+      background-color: #0b0f17;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      background-color: #0b0f17;
+      color: #f8fafc;
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      font-size: 12.2px;
+      line-height: 1.45;
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+
+    .doc-container {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 8px 6px 12px;
+    }
+
+    .exec-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #1e293b;
+      padding-bottom: 10px;
+      margin-bottom: 12px;
+      gap: 14px;
+    }
+
+    .exec-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .exec-brand img {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      border: 2px solid #f59e0b;
+    }
+
+    .exec-brand-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 18px;
+      font-weight: 800;
+      color: #ffffff;
+      letter-spacing: 0.02em;
+    }
+
+    .exec-brand-sub {
+      font-size: 11px;
+      color: #94a3b8;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .exec-pill {
+      background: rgba(245, 158, 11, 0.16);
+      border: 1px solid rgba(245, 158, 11, 0.45);
+      color: #fbbf24;
+      font-size: 10.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 5px 12px;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+
+    .hero-banner {
+      margin-bottom: 18px;
+      break-inside: avoid !important;
+      page-break-inside: avoid !important;
+    }
+
+    h1 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 26px;
+      font-weight: 800;
+      color: #ffffff;
+      line-height: 1.2;
+      margin-bottom: 8px;
+      break-after: avoid !important;
+    }
+
+    .hero-sub {
+      color: #cbd5e1;
+      font-size: 13.5px;
+      line-height: 1.55;
+    }
+
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      margin: 10px 0 14px;
+      break-inside: avoid !important;
+      page-break-inside: avoid !important;
+    }
+
+    .meta-card {
+      background: #111827;
+      border: 1px solid #1e293b;
+      border-radius: 8px;
+      padding: 9px 12px;
+    }
+
+    .meta-label {
+      font-size: 9.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: #f59e0b;
+      margin-bottom: 3px;
+    }
+
+    .meta-val {
+      font-size: 12px;
+      font-weight: 600;
+      color: #f8fafc;
+      line-height: 1.35;
+    }
+
+    .system-block {
+      background: #161f30;
+      border: 1px solid #1e293b;
+      border-radius: 10px;
+      padding: 11px 15px;
+      margin-bottom: 9px;
+      break-inside: avoid !important;
+      page-break-inside: avoid !important;
+    }
+
+    .system-tag {
+      display: inline-block;
+      background: #f59e0b;
+      color: #0b0f17;
+      font-size: 10px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 3px 10px;
+      border-radius: 4px;
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 15.5px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 5px;
+      break-after: avoid !important;
+    }
+
+    .block-desc {
+      color: #cbd5e1;
+      font-size: 12px;
+      margin-bottom: 8px;
+    }
+
+    .action-box {
+      background: #0f172a;
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: 8px;
+      padding: 9px 12px;
+    }
+
+    .step-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 9px;
+      margin-bottom: 6px;
+    }
+
+    .step-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .step-badge {
+      flex-shrink: 0;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: rgba(245, 158, 11, 0.18);
+      border: 1px solid #f59e0b;
+      color: #fbbf24;
+      font-size: 11px;
+      font-weight: 800;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2px;
+    }
+
+    .step-text {
+      font-size: 11.8px;
+      color: #e2e8f0;
+      line-height: 1.42;
+    }
+
+    .checklist-card {
+      background: #111827;
+      border: 1px solid #1e293b;
+      border-radius: 10px;
+      padding: 11px 15px;
+      margin-top: 8px;
+      margin-bottom: 9px;
+      break-inside: avoid !important;
+      page-break-inside: avoid !important;
+    }
+
+    .checklist-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 9px;
+      padding: 4.5px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    }
+
+    .checklist-row:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .check-gold {
+      color: #fbbf24;
+      font-weight: 800;
+      font-size: 13px;
+      line-height: 1.35;
+    }
+
+    .cta-card {
+      background: linear-gradient(135deg, #161f30 0%, #0f172a 100%);
+      border: 1.5px solid #f59e0b;
+      border-radius: 10px;
+      padding: 12px 16px;
+      margin-top: 8px;
+      break-inside: avoid !important;
+      page-break-inside: avoid !important;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      margin-top: 8px;
+      background: #f59e0b;
+      color: #0b0f17;
+      font-weight: 800;
+      font-size: 12.5px;
+      text-decoration: none;
+      padding: 9px 18px;
+      border-radius: 8px;
+    }
+
+    .printable-link {
+      margin-top: 8px;
+      font-size: 11px;
+      color: #94a3b8;
+      overflow-wrap: anywhere;
+    }
+
+    .doc-footer {
+      margin-top: 10px;
+      padding-top: 8px;
+      border-top: 1px solid #1e293b;
+      text-align: center;
+      font-size: 10.5px;
+      color: #64748b;
+    }
+
+    @media print {
+      .no-print { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="doc-container">
+    <header class="exec-header">
+      <div class="exec-brand">
+        <img src="assets/netarhat-crest.png" alt="Netarhat Vidyalaya Crest" style="border-radius: 8px; border: none; background: #ffffff; padding: 3px; width: auto; height: 48px;">
+        <img src="assets/noba-gsr-logo.png" alt="NOBA GSR Logo">
+        <div>
+          <div class="exec-brand-title">NETARHAT FRATERNITY &bull; NOBA संवाद 2026</div>
+          <div class="exec-brand-sub">अत्तदीपा विहरथ &bull; Uniting Every Hatian to Connect &amp; Serve | NOBA GSR</div>
+        </div>
+      </div>
+      <div class="exec-pill">84-Page Annual Issue</div>
+    </header>
+
+    <section class="hero-banner">
+      <h1>From a Shared Bond to a Shared Purpose: Inside NOBA संवाद 2026</h1>
+      <p class="hero-sub">
+        Legacy is not what we receive &mdash; it is what we build. This Executive Preview captures the flagship social initiatives, alumni stories, and grassroots impact documented across the 84-page 2026 Annual Edition of <strong>NOBA Samvad</strong>.
+      </p>
+    </section>
+
+    <section class="meta-grid">
+      <div class="meta-card">
+        <div class="meta-label">Published By</div>
+        <div class="meta-val">NOBA GSR (@NOBAGSR)<br>India &bull; USA &bull; Japan</div>
+      </div>
+      <div class="meta-card">
+        <div class="meta-label">Editorial Leadership</div>
+        <div class="meta-val">Editor: Alok Kumar (564, 1990-94, Anand Ashram)</div>
+      </div>
+      <div class="meta-card">
+        <div class="meta-label">Core Spirit</div>
+        <div class="meta-val">Connect &amp; Serve:<br>Any NOBA. Any Social Work. Anywhere.</div>
+      </div>
+    </section>
+
+    <article class="system-block">
+      <span class="system-tag">HIGHLIGHT 01 &bull; EDITORIAL &amp; REVIVAL</span>
+      <h2>Reviving a Cherished Dialogue: Sewa Se Samvad Tak, Samvad Se Badlav Tak</h2>
+      <p class="block-desc">
+        Reigniting the publication originally started by Late Ranjan Kumar Ji (1977&ndash;83 Batch), NOBA Samvad 2026 reconnects Hatians across batches, Ashrams, and continents with the timeless Netarhat values articulated by F. G. Pearce.
+      </p>
+      <div class="action-box">
+        <div class="step-item">
+          <span class="step-badge">1</span>
+          <div class="step-text"><strong>Pre-Editorial &amp; Editorial (Pages 6&ndash;9):</strong> Memories of Upper &amp; Lower Ghaghri, Paseripath, and Netarhat&rsquo;s ethos transformed into an action call for present and past students.</div>
+        </div>
+        <div class="step-item">
+          <span class="step-badge">2</span>
+          <div class="step-text"><strong>Leadership &amp; Co-Founder Perspectives (Pages 10&ndash;23):</strong> Reflections from Om Prakash Choudhary, N. N. Sinha, Rajesh Chandra Mishra, Co-Founders Jawahar Lal &amp; Vikash Ranjan, and NOBA GSR India &amp; Inc. teams.</div>
+        </div>
+      </div>
+    </article>
+
+    <article class="system-block">
+      <span class="system-tag">HIGHLIGHT 02 &bull; SANGINI FLAGSHIP MISSION</span>
+      <h2>Project Sangini: Protecting Girls&rsquo; Health, Dignity &amp; Education</h2>
+      <p class="block-desc">
+        Born from field visits to rural schools where menstrual hygiene barriers silently pushed girls out of classrooms, Sangini has scaled into a multi-state empowerment movement within four years.
+      </p>
+      <div class="action-box">
+        <div class="step-item">
+          <span class="step-badge">1</span>
+          <div class="step-text"><strong>725+ Schools Equipped:</strong> Installed Sangini Menstrual Hygiene Management (MHM) setups (sanitary pad vending machines &amp; incinerators) across 10 Indian states including Bihar, Jharkhand, Karnataka, Gujarat, Telangana, Uttarakhand, and Maharashtra.</div>
+        </div>
+        <div class="step-item">
+          <span class="step-badge">2</span>
+          <div class="step-text"><strong>2.5 Lakh+ Adolescent Girls Reached:</strong> Dramatically reduced school absenteeism and built community-level awareness around menstrual dignity.</div>
+        </div>
+      </div>
+    </article>
+
+    <article class="system-block">
+      <span class="system-tag">HIGHLIGHT 03 &bull; SNEH &amp; GRASSROOTS SEWA</span>
+      <h2>SNEH (Support Network for Hatians) &amp; Nationwide Relief Drives</h2>
+      <p class="block-desc">
+        Turning alumni bonds into both an organized mutual-support ecosystem and immediate disaster, heatwave, education, and ecological stewardship across India.
+      </p>
+      <div class="action-box">
+        <div class="step-item">
+          <span class="step-badge">1</span>
+          <div class="step-text"><strong>SNEH &mdash; Support Network for Hatians (Page 78):</strong> Structured mentorship, career guidance, and family crisis support linking Netarhat alumni across generations and geographies.</div>
+        </div>
+        <div class="step-item">
+          <span class="step-badge">2</span>
+          <div class="step-text"><strong>Disaster &amp; Summer Relief (Pages 60&ndash;75):</strong> 25,000 sanitary pads, school bags &amp; medicated mosquito nets during Bihar/Assam floods, plus 300+ large umbrellas distributed across 30+ NOBA chapters (with BJANA) in Delhi, Pune, Bengaluru, Lucknow, and Kolkata.</div>
+        </div>
+        <div class="step-item">
+          <span class="step-badge">3</span>
+          <div class="step-text"><strong>Education &amp; Wildlife (Pages 70&ndash;71):</strong> Community Library at Late Padmashri Vashishth Narayan Center of Excellence (Kaimur, Bihar) and 4-year White Peacock enclosure adoption at Patna Zoo recognized by the Bihar Government.</div>
+        </div>
+      </div>
+    </article>
+
+    <article class="system-block">
+      <span class="system-tag">HIGHLIGHT 04 &bull; HALL OF FAME &amp; GLOBAL CHAPTERS</span>
+      <h2>Hall of Fame, Student Excellence &amp; Global Footprint (India &bull; USA &bull; Japan)</h2>
+      <p class="block-desc">
+        Celebrating towering alumni contributions alongside current Netarhat students, NOBA Kids&rsquo; achievements, Letter Writing Competitions (2023&ndash;2025), and active chapter &amp; batch coordinator networks.
+      </p>
+      <div class="action-box">
+        <div class="step-item">
+          <span class="step-badge">1</span>
+          <div class="step-text"><strong>Hall of Fame Profiles (Pages 32&ndash;39):</strong> Inspiring journeys of Prof. Prabhat Ranjan (1970&ndash;76, Nalanda Ashram), Dr. Rajesh Kumar (SPYM), and Baldeo Purushartha.</div>
+        </div>
+        <div class="step-item">
+          <span class="step-badge">2</span>
+          <div class="step-text"><strong>Global Presence:</strong> NOBA GSR showcase at IIT 2026 Global Conference, NOBA GSR in Japan, Patna Annual Gala, and complete Chapter &amp; Batch Coordinator directories (Pages 40&ndash;54).</div>
+        </div>
+      </div>
+    </article>
+
+    <section class="checklist-card">
+      <span class="system-tag">PARTICIPATE IN YOUR CAPACITY</span>
+      <h2>4 Ways Every Hatian Can Strengthen NOBA GSR Today</h2>
+      <div class="checklist-row">
+        <span class="check-gold">&#10004;</span>
+        <div class="step-text"><strong>Subscribe &amp; Share NOBA Samvad 2026:</strong> Register your updated batch, Ashram, and postal address so every batchmate stays connected to the movement.</div>
+      </div>
+      <div class="checklist-row">
+        <span class="check-gold">&#10004;</span>
+        <div class="step-text"><strong>Join SNEH Mentorship:</strong> Offer 1 hour a month to guide current students or fellow Hatians navigating career, academic, or personal crossroads.</div>
+      </div>
+      <div class="checklist-row">
+        <span class="check-gold">&#10004;</span>
+        <div class="step-text"><strong>Lead a Local Chapter Drive:</strong> Coordinate umbrella, blanket, library, or Sangini MHM school installations in your city or home district.</div>
+      </div>
+      <div class="checklist-row">
+        <span class="check-gold">&#10004;</span>
+        <div class="step-text"><strong>Contribute Resource or CSR Partnerships:</strong> Support NOBA GSR India (80G Tax Benefit eligible), USA (NOBA GSR Inc.), or Japan drives.</div>
+      </div>
+    </section>
+
+    <article class="system-block">
+      <span class="system-tag">SUPPORT &amp; TRANSPARENCY &bull; PAGE 82</span>
+      <h2>Official Contribution Channels (India 80G &bull; USA &bull; Japan)</h2>
+      <p class="block-desc">
+        &ldquo;It is not about donations, it&rsquo;s about dedication.&rdquo; Every contribution supports grassroots education, Sangini MHM, SNEH, and relief drives directly.
+      </p>
+      <div class="action-box">
+        <div class="step-item">
+          <span class="step-badge">1</span>
+          <div class="step-text"><strong>India (80G Tax Benefit Eligible):</strong> A/C Name: <strong>NOBA GSR</strong> &bull; Punjab National Bank, Boring Road, Patna 800001 &bull; A/C No: <code>2910000100302941</code> &bull; IFSC: <code>PUNB0291000</code> &bull; UPI: <code>9972621655m@pnb</code></div>
+        </div>
+        <div class="step-item">
+          <span class="step-badge">2</span>
+          <div class="step-text"><strong>USA (NOBA GSR Inc.):</strong> Zelle to <code>nobagsr@gmail.com</code> &bull; Direct transfer via PNC Bank (Account: <code>8132320758</code>, Routing: <code>031207607</code>)</div>
+        </div>
+        <div class="step-item">
+          <span class="step-badge">3</span>
+          <div class="step-text"><strong>Japan:</strong> PayPay to <code>+81-90-8010-2250</code></div>
+        </div>
+      </div>
+    </article>
+
+    <section class="cta-card">
+      <span class="system-tag">NEXT STEP &bull; FULL 84-PAGE DIGITAL EDITION</span>
+      <h2>Read the Complete 84-Page NOBA संवाद 2026 Magazine</h2>
+      <p class="block-desc" style="margin-bottom: 6px;">
+        Explore every tribute, Hall of Fame feature, chapter report, and upcoming 2026&ndash;27 roadmap in the complete digital edition, or reach our editorial &amp; coordination desk directly.
+      </p>
+      <a href="https://drive.google.com/file/d/1J1hYRjsv6WMu1c6gfZu__Mp4dQ39Ptmt/view?usp=sharing" target="_blank" class="cta-btn">Open Full 84-Page Magazine PDF &rarr;</a>
+      <a href="https://chat.whatsapp.com/JyTPCCW0P44Kl2LVuvaoCo" target="_blank" class="cta-btn" style="background: #10b981; margin-left: 8px;">Join WhatsApp Community &rarr;</a>
+      <p class="printable-link">
+        Direct Magazine Link: https://drive.google.com/file/d/1J1hYRjsv6WMu1c6gfZu__Mp4dQ39Ptmt/view?usp=sharing<br>
+        WhatsApp Community: https://chat.whatsapp.com/JyTPCCW0P44Kl2LVuvaoCo &bull; Web: https://www.nobagsr.org &bull; WhatsApp Desk: +91 88639 48111
+      </p>
+    </section>
+
+    <footer class="doc-footer">
+      Published by Netarhat Vidyalaya Old Boys&rsquo; Association &ndash; Global Social Responsibility (NOBA GSR) &bull; info@nobagsr.org
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subscription Confirmed | NOBA संवाद 2026 &bull; NOBA GSR</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=4">
+  <style>
+    .ty-wrapper {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 32px clamp(16px, 4vw, 32px) 64px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .ty-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-gold);
+      border-radius: var(--radius-lg);
+      padding: clamp(26px, 4vw, 44px);
+      text-align: center;
+      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.45);
+    }
+
+    .check-badge {
+      width: 68px;
+      height: 68px;
+      border-radius: 50%;
+      background: rgba(16, 185, 129, 0.16);
+      border: 2px solid var(--accent-emerald);
+      color: #34d399;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      margin-bottom: 18px;
+    }
+
+    .ty-title {
+      font-family: var(--font-display);
+      font-size: clamp(24px, 3.8vw, 34px);
+      font-weight: 800;
+      color: #ffffff;
+      line-height: 1.2;
+      margin-bottom: 10px;
+    }
+
+    .ty-sub {
+      font-size: 15px;
+      color: var(--text-secondary);
+      max-width: 650px;
+      margin: 0 auto 24px;
+      line-height: 1.6;
+    }
+
+    .summary-strip {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 16px 20px;
+      margin: 0 auto 26px;
+      text-align: left;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px 20px;
+      font-size: 13px;
+      color: var(--text-secondary);
+    }
+
+    .summary-strip strong {
+      color: var(--accent-gold-bright);
+    }
+
+    .cta-group {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .btn-primary-gold {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%);
+      color: #0b0f17;
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: 15px;
+      padding: 14px 26px;
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      box-shadow: 0 10px 25px rgba(245, 158, 11, 0.3);
+      transition: transform 0.2s var(--ease-spring);
+    }
+
+    .btn-primary-gold:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary-dark {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      color: #ffffff;
+      font-weight: 600;
+      font-size: 14px;
+      padding: 13px 22px;
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      transition: border-color 0.2s ease, background 0.2s ease;
+    }
+
+    .btn-secondary-dark:hover {
+      border-color: var(--accent-gold);
+      background: rgba(245, 158, 11, 0.08);
+    }
+
+    .ty-grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-top: 26px;
+      text-align: left;
+    }
+
+    .ty-panel {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 24px;
+    }
+
+    .ty-panel h3 {
+      font-family: var(--font-display);
+      font-size: 19px;
+      font-weight: 700;
+      color: #ffffff;
+      margin: 8px 0 8px;
+    }
+
+    .ty-panel p {
+      font-size: 13.5px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 14px;
+    }
+
+    .btn-whatsapp {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #10b981;
+      color: #080f18;
+      font-weight: 800;
+      font-size: 13.5px;
+      padding: 12px 20px;
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      transition: transform 0.2s var(--ease-spring);
+    }
+
+    .btn-whatsapp:hover {
+      transform: translateY(-2px);
+    }
+
+    .support-details {
+      background: var(--bg-card);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: var(--radius-sm);
+      padding: 12px 14px;
+      font-size: 12.5px;
+      color: var(--text-secondary);
+      line-height: 1.65;
+    }
+
+    .support-details code {
+      color: var(--accent-gold-bright);
+      font-family: monospace;
+    }
+
+    @media (max-width: 760px) {
+      .summary-strip,
+      .ty-grid-2 {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-glow"></div>
+
+  <header class="site-header">
+    <a href="index.html" class="brand-lockup">
+      <img src="assets/netarhat-crest.png" alt="Netarhat Vidyalaya Crest" class="crest-logo">
+      <span class="brand-divider" aria-hidden="true"></span>
+      <img src="assets/noba-gsr-logo.png" alt="NOBA GSR Emblem" class="brand-logo">
+      <div class="brand-text-group">
+        <span class="brand-title">Netarhat Fraternity &bull; NOBA संवाद 2026</span>
+        <span class="brand-subtitle">अत्तदीपा विहरथ &bull; Netarhat Vidyalaya Old Boys&rsquo; Association &bull; NOBA GSR</span>
+      </div>
+    </a>
+    <div class="header-actions">
+      <a href="index.html" class="btn-secondary-dark" style="padding: 8px 16px; font-size: 12.5px;">&larr; Back to Portal</a>
+    </div>
+  </header>
+
+  <main class="ty-wrapper">
+    <section class="ty-card">
+      <div class="check-badge">&#10003;</div>
+      <h1 class="ty-title" id="ty-headline">Your NOBA संवाद 2026 Subscription Is Confirmed!</h1>
+      <p class="ty-sub" id="ty-subline">
+        Thank you for consenting to be part of NOBA GSR and registering your details. A confirmation has been dispatched to your email, and your address is queued for our alumni-sponsored print dispatch.
+      </p>
+
+      <div id="subscriber-summary" class="summary-strip" style="display: none;"></div>
+
+      <div class="cta-group">
+        <a href="https://drive.google.com/file/d/1J1hYRjsv6WMu1c6gfZu__Mp4dQ39Ptmt/view?usp=sharing" target="_blank" rel="noopener" class="btn-primary-gold">
+          <span>Read Full 84-Page NOBA संवाद 2026 (PDF)</span>
+          <span>&rarr;</span>
+        </a>
+        <a href="noba-samvad-2026-highlights.pdf" download="NOBA-Samvad-2026-Highlights.pdf" class="btn-secondary-dark">
+          <span>Download Highlights Brief (PDF)</span>
+        </a>
+        <a href="highlights.html" target="_blank" class="btn-secondary-dark">
+          <span>Read Highlights Online</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="ty-grid-2">
+      <article class="ty-panel">
+        <span class="optin-badge" style="margin-bottom: 0;">Step 1 &bull; Connect Instantly on WhatsApp</span>
+        <h3>Join the NOBA GSR WhatsApp Community</h3>
+        <p>
+          Step inside the official NOBA GSR community group to connect with fellow Netarhat alumni across all 21 Ashrams and batches &mdash; under one roof to connect and serve.
+        </p>
+        <div style="display: flex; flex-direction: column; gap: 10px; align-items: flex-start;">
+          <a href="https://chat.whatsapp.com/JyTPCCW0P44Kl2LVuvaoCo" target="_blank" rel="noopener" class="btn-whatsapp">
+            <span>Join NOBA GSR WhatsApp Community Now</span>
+            <span>&rarr;</span>
+          </a>
+          <a id="whatsapp-connect-btn" href="https://wa.me/918863948111?text=Namaste%20NOBA%20GSR%20Team!%20I%20just%20subscribed%20to%20NOBA%20Samvad%202026%20and%20would%20love%20to%20connect." target="_blank" rel="noopener" class="btn-secondary-dark" style="font-size: 12.5px; padding: 10px 16px;">
+            <span>Message Editorial Desk (+91 88639 48111)</span>
+          </a>
+        </div>
+      </article>
+
+      <article class="ty-panel">
+        <span class="optin-badge" style="background: rgba(245, 158, 11, 0.14); border-color: rgba(245, 158, 11, 0.35); color: #fbbf24; margin-bottom: 0;">Step 2 &bull; Support in Your Capacity</span>
+        <h3>Support Sangini, SNEH &amp; Sewa Drives</h3>
+        <p>
+          <em>&ldquo;It is not about donations, it&rsquo;s about dedication.&rdquo;</em> Official NOBA GSR contribution channels (Page 82):
+        </p>
+        <div class="support-details">
+          <strong>India (80G Tax Benefit):</strong> A/C: NOBA GSR &bull; PNB, Boring Road, Patna &bull; A/C <code>2910000100302941</code> &bull; IFSC <code>PUNB0291000</code> &bull; UPI: <code>9972621655m@pnb</code><br>
+          <strong>USA (NOBA GSR Inc.):</strong> Zelle <code>nobagsr@gmail.com</code> &bull; PNC Bank A/C <code>8132320758</code> / Routing <code>031207607</code><br>
+          <strong>Japan:</strong> PayPay <code>+81-90-8010-2250</code>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 NOBA GSR &bull; <a href="https://www.nobagsr.org" target="_blank" rel="noopener">www.nobagsr.org</a> &bull; <a href="mailto:info@nobagsr.org">info@nobagsr.org</a></p>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      try {
+        const raw = localStorage.getItem('noba_samvad_subscriber');
+        if (!raw) return;
+        const data = JSON.parse(raw);
+
+        const headline = document.getElementById('ty-headline');
+        if (headline && data.name) {
+          headline.textContent = 'Thank You, ' + data.name + '! Your Subscription Is Confirmed';
+        }
+
+        const summary = document.getElementById('subscriber-summary');
+        if (summary) {
+          summary.style.display = 'grid';
+          summary.innerHTML =
+            '<div><strong>Alumni Record:</strong> ' + escapeHtml(data.name) + ' (Roll ' + escapeHtml(data.roll_no) + ')</div>' +
+            '<div><strong>Batch &amp; Ashram:</strong> ' + escapeHtml(data.batch) + ' &bull; ' + escapeHtml(data.ashram) + '</div>' +
+            '<div><strong>Edition Format:</strong> ' + escapeHtml(data.format) + '</div>' +
+            '<div><strong>Dispatch Destination:</strong> ' + escapeHtml(data.country) + ' &mdash; PIN ' + escapeHtml(data.pincode) + '</div>';
+        }
+
+        const waBtn = document.getElementById('whatsapp-connect-btn');
+        if (waBtn && data.name) {
+          const msg =
+            'Namaste NOBA GSR Team! I just subscribed to NOBA Samvad 2026.\n' +
+            'Name: ' + data.name + '\n' +
+            'Roll No: ' + (data.roll_no || '-') + '\n' +
+            'Batch: ' + (data.batch || '-') + '\n' +
+            'Ashram: ' + (data.ashram || '-') + '\n' +
+            'Contribution Interest: ' + (data.contribution || 'Open to contribute');
+          waBtn.href = 'https://wa.me/918863948111?text=' + encodeURIComponent(msg);
+        }
+      } catch (e) {}
+    });
+
+    function escapeHtml(str) {
+      return String(str || '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+    }
+  </script>
+</body>
+</html>

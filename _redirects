@@ -1,0 +1,8 @@
+# NOBA Samvad 2026 Standalone Redirects & Clean URLs
+/thank-you /thank-you.html 200
+/highlights /highlights.html 200
+/brief /highlights.html 301
+/pdf /noba-samvad-2026-highlights.pdf 301
+/magazine https://drive.google.com/file/d/1J1hYRjsv6WMu1c6gfZu__Mp4dQ39Ptmt/view?usp=sharing 302
+/whatsapp https://chat.whatsapp.com/JyTPCCW0P44Kl2LVuvaoCo 302
+/community https://chat.whatsapp.com/JyTPCCW0P44Kl2LVuvaoCo 302
